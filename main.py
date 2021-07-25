@@ -9,6 +9,7 @@ while active:
         print("You landed on Tails\n")
     if value == 2:
         print("You landed on Heads\n")
-    statement = int(input("|If you would like to exit type 1 or type 0 to continue: \n"))  # shutdown statement
-    if statement == 1:
+    statement = input("Would you like to continue y or n: \n")  # shutdown statement
+    finish = "n" or "N"
+    if statement == finish:
         break
